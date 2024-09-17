@@ -1,8 +1,14 @@
 body {
-  --main-background: #ffffff;
-  --main-font: #000000;
-  --contrast-color: #B8FF20;
-  --contrast-color-hover: #D9FF88;
+  --light-color: #ffffff;
+  --dark-color: #222222;
+  --dark-color-second: #1D2020;
+  --color-first: #677371;
+  --color-second: #828E8C;
+  --color-third: #E5E8E7;
+  --color-forth: #F5F6F6;
+  --contrast-color: #3E989A;
+  --contrast-color-second: #D7F0EE;
+  --contrast-color-hover: #5ab6b8;
   background-color: var(--main-background);
   color: var(--main-font);
   overflow-x: hidden;
@@ -23,59 +29,4 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: content-box;
-}
-
-@font-face {
-  font-family: Geologica;
-  font-weight: 500;
-  src: url(/font/Geologica-Medium.ttf);
-}
-@font-face {
-  font-family: Geologica;
-  font-weight: 400;
-  src: url(/font/Geologica-Regular.ttf);
-}
-@font-face {
-  font-family: Geologica;
-  font-weight: 600;
-  src: url(/font/Geologica-SemiBold.ttf);
-}
-@font-face {
-  font-family: Manrope;
-  font-weight: 700;
-  src: url(/font/Manrope-Bold.ttf);
-}
-@font-face {
-  font-family: Manrope;
-  font-weight: 300;
-  src: url(/font/Manrope-Light.ttf);
-}
-@font-face {
-  font-family: Manrope;
-  font-weight: 500;
-  src: url(/font/Manrope-Medium.ttf);
-}
-@font-face {
-  font-family: Manrope;
-  font-weight: 400;
-  src: url(/font/Manrope-Regular.ttf);
-}
-@font-face {
-  font-family: Manrope;
-  font-weight: 600;
-  src: url(/font/Manrope-SemiBold.ttf);
-}
-.header__wrappper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-}
-
-.header__menu {
-  display: flex;
-}
-
-.menu-header__item {
-  padding: 10px 8px;
 }/*# sourceMappingURL=style.css.map */

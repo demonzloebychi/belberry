@@ -1,3 +1,3 @@
-fetch('components/header.html')
-.then(response => response.text())
-.then(html => document.getElementById('header').innerHTML = html);
+// fetch('components/header.html')
+// .then(response => response.text())
+// .then(html => document.getElementById('header').innerHTML = html);
