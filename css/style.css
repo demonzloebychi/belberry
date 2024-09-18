@@ -1,5 +1,7 @@
 @import 'components/main.css';
+@import 'components/fonts.css';
 @import 'components/header.css';
+@import 'components/modal.css';
 @import 'components/main-banner.css';
 @import 'components/welcome.css';
 @import 'components/why.css';

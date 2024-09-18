@@ -1,5 +1,5 @@
 #header{
-  padding-block: clamp(18px, 2vw, 23px);
+  padding-block: 23px;
 }
 .header__wrappper {
   display: flex;
@@ -199,6 +199,9 @@
 
 
 @media (max-width: 1220px) {
+  #header{
+    padding-block: 0px;
+  }
 
 
 
