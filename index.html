@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/header.css">
 
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/fonts.css">
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
 
     <script defer src="/js/menu.js"></script>
     <script defer src="/js/script.js"></script>
+    <script defer src="/js/modal.js"></script>
+    <script defer src="/js/swiper.js"></script>
+    <script defer src="/js/doctors.js"></script>
+
+
 
     <script defer src="/js/use-components.js"></script>
 
@@ -18,6 +30,23 @@
 </head>
 <body>
     <div class="wrapper">
+
+        <div class="modal" style="display: none; width: 500px;" id="modal">
+            
+            <div class="modal-title">
+                Записаться
+            </div>
+
+            <form class="form" action="">
+                <input class="form-name form-input" type="text" placeholder="Имя" >
+                <input required id="phone" type="text" class="form-tel form-input" placeholder="+7 (___) ___-__-__" maxlength="18">
+                <submit class="form-submit form-input">Отправить</submit>
+            </form>
+        </div>
+
+
+
+
         <header id="header">
             <div class="container">
                 <div class="header__wrappper">
@@ -104,7 +133,7 @@
                         </div>
                 
                         <div class="header__btns">
-                            <button href="" class="header__btn">Записаться</button>
+                            <a data-fancybox href="#modal" class="header__btn long-btn">Записаться</a>
             
                             <button class="header__account btn-square">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -143,6 +172,235 @@
             </div>
         </header>
 
+
+        <section id="main-banner"></section>
+
+
+        <section id="welcome"></section>
+
+
+        <section id="why">
+            <div class="container">
+                <div class="why__wrapper">
+                    <p class="why__title">
+                        Почему стоит к нам обратиться?
+                    </p>
+            
+                    <div class="why__cards">
+            
+            
+                        <div class="why__card card-why">
+                            <div class="card-why__left">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M40 12L18 34L8 24" stroke="#2CBDC1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <div class="card-why__title">
+                                    Онлайн-запись и доступ к результатам
+                                </div>
+            
+                            </div>
+            
+                            <div class="card-why__right">
+                                <div class="card-why__desc">
+                                    Внедрили систему онлайн-записи, благодаря которой вы можете выбрать желаемое время приема и специалиста
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="why__card card-why">
+                            <div class="card-why__left">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M40 12L18 34L8 24" stroke="#2CBDC1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <div class="card-why__title">
+                                    Предварительные консультации
+                                </div>
+            
+                            </div>
+            
+                            <div class="card-why__right">
+                                <div class="card-why__desc">
+                                    Первичное обследование, позволяющее врачу оценить состояние пациента и определить шаги лечения или диагностики
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="why__card card-why">
+                            <div class="card-why__left">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M40 12L18 34L8 24" stroke="#2CBDC1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <div class="card-why__title">
+                                    Централизованная информационная система
+                                </div>
+            
+                            </div>
+            
+                            <div class="card-why__right">
+                                <div class="card-why__desc">
+                                    Единая платформа для хранения и управления всеми данными о пациентах, медицинских записях и административных процессах.
+                                </div>
+                            </div>
+                        </div>
+            
+            
+                        <div class="why__card card-why">
+                            <div class="card-why__left">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M40 12L18 34L8 24" stroke="#2CBDC1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <div class="card-why__title">
+                                    Экспресс-диагностика
+                                </div>
+            
+                            </div>
+            
+                            <div class="card-why__right">
+                                <div class="card-why__desc">
+                                    Быстрое и эффективное обследование, позволяющее оперативно определить состояние здоровья пациента
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="why__card card-why">
+                            <div class="card-why__left">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M40 12L18 34L8 24" stroke="#2CBDC1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <div class="card-why__title">
+                                    Оптимизированный маршрут пациентов
+                                </div>
+            
+                            </div>
+            
+                            <div class="card-why__right">
+                                <div class="card-why__desc">
+                                    Упорядоченный процесс перемещения пациентов между отделениями и специалистами
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="why__card card-why">
+                            <div class="card-why__left">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M40 12L18 34L8 24" stroke="#2CBDC1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <div class="card-why__title">
+                                    Горячая линия для пациентов
+                                </div>
+            
+                            </div>
+            
+                            <div class="card-why__right">
+                                <div class="card-why__desc">
+                                    Круглосуточная телефонная служба, предоставляющая консультации и оперативную поддержку по медицинским вопросам.
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="help">
+            <div class="container">
+        
+                <div class="help__wrapper">
+            
+                    <div class="help__header">
+                        <h2 class="help__title">
+                            Мы поможем вам
+                        </h2>
+                        <p class="help__desc">
+                            Атмосфера безопасности и эмпатии
+                        </p>
+                    </div>
+            
+            
+            
+                    <div class="help__body">
+            
+            
+                        <div class="tabs__wrapper">
+            
+                            <nav class="tabs__header nav-tabs">
+            
+                                <div class="nav-tabs__item is-active" data-tab-name="project-tab-1">
+                                    Специалисты
+                                </div>
+                                <div class="nav-tabs__item" data-tab-name="project-tab-2">
+                                    Диагноистика
+                                </div>
+                                <div class="nav-tabs__item" data-tab-name="project-tab-3">
+                                    Анализы
+                                </div>
+                                <div class="nav-tabs__item" data-tab-name="project-tab-4">
+                                    Заболевания
+                                </div>
+                                        
+                            </nav>
+            
+            
+                            <div class="tabs__body body-tabs">
+            
+                                <div class="body-tabs__header">
+            
+                                    <h3 class="body-tabs__title">
+                                        Более 20 специальностей врачей готовы <span>помочь вам</span> 
+                                    </h3>
+            
+                                    <div class="body-tabs__btns">
+                                        <button class="body-tabs__btn">
+                                            Взрослые врачи
+                                        </button>
+                                        <button class="body-tabs__btn">
+                                            Детские врачи
+                                        </button>
+                                    </div>
+            
+            
+            
+                                </div>
+            
+            
+                                <div class="body-tabs__body">
+        
+                             
+        
+                                    <ul class="doctor-list" id="doctorList"></ul>
+        
+        
+            
+                                </div>
+            
+                            </div>
+            
+            
+            
+            
+                        </div>
+            
+                     
+            
+            
+            
+                    </div>
+                   
+            
+                </div>
+            </div>
+        </section>
+        
+
+
+        
+      
     </div>
 
 </body>

@@ -1,0 +1,36 @@
+
+.modal-title {
+    font-size: clamp(18px, 2vw, 26px);
+    font-family: 'Stolz', sans-serif;
+    font-weight: 700;
+    color: var(--contrast-color);
+    margin-bottom: 10px;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Stolz', sans-serif;
+    gap: 20px;
+    font-weight: 400;
+
+}
+.form-input{
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--contrast-color);
+}
+.form-name {
+
+
+}
+.form-tel {
+
+
+}
+.form-submit {
+    background-color: var(--contrast-color);
+    color: var(--color-third);
+   
+}

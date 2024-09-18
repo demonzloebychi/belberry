@@ -1,40 +1,40 @@
 @font-face {
-  font-family: Stolzl;
+  font-family: 'Stolzl';
   font-weight: 500;
   src: url(/font/stolzl_medium.otf);
 }
 @font-face {
-  font-family: Stolzl;
+  font-family: 'Stolzl';
   font-weight: 400;
   src: url(/font/stolzl_regular.otf);
 }
 @font-face {
-  font-family: Stolzl-book;
+  font-family: 'Stolzl-book';
   font-weight: 400;
   src: url(/font/stolzl_book.otf);
 }
 @font-face {
-  font-family: Stolzl;
+  font-family: 'Stolzl';
   font-weight: 700;
   src: url(/font/stolzl_bold.otf);
 }
 @font-face {
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-weight: 500;
   src: url(/font/Manrope-Medium.ttf);
 }
 @font-face {
-  font-family: Inter;
+  font-family: 'Inter';
   font-weight: 700;
   src: url(/font/Inter-Bold.otf);
 }
 @font-face {
-  font-family: Inter;
+  font-family: 'Inter';
   font-weight: 400;
   src: url(/font/Inter-Regular.otf);
 }
 @font-face {
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-weight: 400;
   src: url(/font/Ubuntu-Regular.ttf);
-}/*# sourceMappingURL=fonts.css.map */
+}

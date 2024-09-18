@@ -1,0 +1,66 @@
+#why {
+    margin-top: clamp(80px, 9vw, 120px);
+
+}
+.why__wrapper {
+}
+.why__title {
+    font-family: "Stolzl", sans-serif;
+    font-weight: 400;
+    font-size: clamp(16px, 2vw, 18px);
+    line-height: 150%;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+.why__cards {
+}
+.why__card {
+}
+.card-why {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    padding-block: clamp(16px, 2vw, 24px);
+    border-bottom: 1px solid var(--color-third);
+    gap: 12px;
+
+}
+.card-why:last-child{
+    border-bottom: none;
+}
+.card-why__left {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 22px;
+}
+.card-why__title {
+    font-family: "Stolzl", sans-serif;
+    font-weight: 700;
+    font-size: clamp(24px, 2.5vw , 28px);
+    line-height: 120%;
+    color: var(--dark-color);
+
+}
+.card-why__right {
+}
+.card-why__desc {
+    font-family: "Stolzl", sans-serif;
+    font-weight: 400;
+    font-size: clamp(14px, 2vw, 15px);
+    line-height: 150%;
+    color: var(--dark-color);
+
+
+}
+
+
+@media (max-width: 768px) {
+    .card-why {
+        grid-template-columns: 1fr;
+    }
+    .card-why__left {
+        svg{
+            display: none;
+        }
+    }
+}
